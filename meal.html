@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yammy yammy meal</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <!-- search section -->
+    <section>
+        <div class="flex justify-center items-center mt-20 gap-5">
+            <input id="serch-field" class="bg-slate-200 px-5 py-3 rounded-lg " type="text" placeholder="Search">
+            <button onclick="searchMeals()" class="btn btn-primary">Search</button>
+        </div>
+
+    </section>
+
+
+    <!-- meal card section -->
+
+    <section class="m-10">
+        <div id="meal-container" class="grid grid-cols-4 gap-5">
+
+
+        </div>
+    </section>
+
+
+
+
+    <!-- modal section-->
+    <section>
+        <!-- The button to open modal -->
+        
+        <!-- Put this part before tag -->
+        
+        <div class="modal" id="meal-details">
+            <div class="modal-box">
+                <!-- <label for="meal-details" class="btn btn-sm btn-circle absolute right-2 top-2">✕</label> -->
+                <h3 id="meal-title" class="font-bold text-lg">Congratulations random Internet user!</h3>
+                <div id="meal-body">
+
+                </div>
+                <div class="modal-action">
+                    <a href="#" class="btn">Close</a>
+                   
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/meal.js"></script>
+
+</body>
+
+</html>
